@@ -23,6 +23,8 @@ controlled through update().
 """
 
 from turtle import *
+import csv
+
 
 def stop():
     global running
@@ -42,7 +44,7 @@ def main():
     s = 5
     c = 1
 
-    # create triangle
+    # create triangle2
     shapesize(10)
     pu()
     setpos(0, 0)
