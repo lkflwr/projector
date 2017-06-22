@@ -34,7 +34,7 @@ def main():
     bgcolor("white")
     #tracer(False)
     delay(10)
-    triangle= ((0,0),(0.5*20,0.88*20),(-0.5*20,0.88*20))
+    triangle= ((0,0),(0.5*25,0.88*25),(-0.5*25,0.88*25))
     register_shape("tst",triangle)
     shape("tst")
     f =   0.793402
