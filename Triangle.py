@@ -33,8 +33,10 @@ def main():
     clearscreen()   #
     bgcolor("white")
     #tracer(False)
-    delay(50)
-    shape("triangle")
+    delay(10)
+    triangle= ((0,0),(0.5*20,0.88*20),(-0.5*20,0.88*20))
+    register_shape("tst",triangle)
+    shape("tst")
     f =   0.793402
     phi = 9.064678
     s = 5
@@ -43,14 +45,14 @@ def main():
     # create triangle
     shapesize(10)
     pu()
-    setpos(0, 150)
+    setpos(0, 0)
 
     # Rotate
     running = True
     onkeypress(stop)
     listen()
     while running:
-        ta = -3.6
+        ta = -1
         tilt(ta)
         update()
     return "DONE!"
